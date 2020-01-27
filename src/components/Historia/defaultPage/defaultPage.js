@@ -9,8 +9,8 @@ const defaultPage = () => {
     return (
         <div className={classes.MainCont}>
             <Icon icon={bxSearchAlt} style={{fontSize: '164px'}} />
-            <svg width='400' height='60'>
-                <ellipse cx='200' cy='15' rx='100' ry='10' style={{fill:'rgba(194, 192, 192, 0.26)'}} />
+            <svg className={classes.cont}>
+                <ellipse cx='150' cy='15' rx='100' ry='10' style={{fill:'rgba(194, 192, 192, 0.26)'}} />
             </svg>
             <div className={classes.TextContent}>
             <p>Realiza busquedas de tareas entre todas las comunidades</p>

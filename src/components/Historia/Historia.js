@@ -22,7 +22,7 @@ class Historia extends Component {
                     titulo="Historia"
                     userOptions/>
                 <main className={classes.MainCont}>
-                    <DefaultPage/>
+                <DefaultPage/>
                 </main>
                 <Appbar/>
             </React.Fragment>
