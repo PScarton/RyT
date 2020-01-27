@@ -49,11 +49,10 @@ const Input = (props) => {
   const classes = useStyles();
     let rows = "10"
     let multilinea = false
-    let input = <CssTextField  onBlur={props.onBlur} multiline={multilinea} rows={rows} value={props.value} onChange={props.onChange} fullWidth label={props.etiqueta} helperText={props.TextoDeAyuda} />;
-
     if(props.row){
       multilinea = true;
     }
+    let input = <CssTextField  onBlur={props.onBlur} multiline={multilinea} rows={rows} value={props.value} onChange={props.onChange} fullWidth label={props.etiqueta} helperText={props.TextoDeAyuda} />;
 
     if(props.naked){
       input = <InputBase
