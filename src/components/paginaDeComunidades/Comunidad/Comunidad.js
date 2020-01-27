@@ -36,10 +36,14 @@ class Comunidad extends Component {
     getData = () => {
         instance.get(this.props.match.url+'.json')
             .then(response => {
-                this.setState({
-                    nombreComunidad: response.data.nombre,
-                    tareas: response.data.Tareas,
-                })
+                if(response.data) {
+                    this.setState({
+                        nombreComunidad: response.data.nombre,
+                        tareas: response.data.Tareas,
+                    })
+                } else {
+                    this.salir();
+                }
             })
     }
 

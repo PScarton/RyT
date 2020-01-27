@@ -71,7 +71,7 @@ class TareaDetails extends Component {
             <div className={classes.DetailCont}>
 
                 <div className={classes.midCont}>
-
+ 
                     <button onClick={this.openModal} >
                         <Icon icon={bxsUser} style={{fontSize: '30px'}} />
                         <div className={classes.SmallCont}>
