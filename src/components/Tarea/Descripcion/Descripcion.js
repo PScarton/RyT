@@ -25,7 +25,7 @@ const Descripcion = (props) => {
                     </button>
                 </div>
                 <div className={classes.Contenido}>
-                    <Input row etiqueta="Descrición" onChange={props.setDescripcion} value={descripcion}/>
+                    <Input row etiqueta="Descrición" onBlur={props.onBlur} onChange={props.setDescripcion} value={descripcion}/>
                 </div>
             </div>
         );

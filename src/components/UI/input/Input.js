@@ -42,7 +42,7 @@ const Input = (props) => {
     }
 
     return (
-      <CssTextField  multiline={multilinea} rows={rows} value={props.value} onChange={props.onChange} fullWidth label={props.etiqueta} helperText={props.TextoDeAyuda} />
+      <CssTextField  onBlur={props.onBlur} multiline={multilinea} rows={rows} value={props.value} onChange={props.onChange} fullWidth label={props.etiqueta} helperText={props.TextoDeAyuda} />
     )
 }
 

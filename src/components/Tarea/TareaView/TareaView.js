@@ -135,10 +135,17 @@ class TareaView extends Component {
         }
     }
 
-    //descripcion.
-    setDescripcion = () => {
-
+    /* Funciones necesarias para actualizar la descripcion */
+    // Funcion para detectar cuando el elemento no esta Focus
+    onBlur = () => {
+        const newTarea = this.actualizarTareaData('descripcion',this.state.descripcion)
+        instance.put(this.state.direccion,newTarea);
     }
+    setDescripcion = (e) => {
+        this.setState({descripcion: e.target.value});
+    }
+
+
     render(){
         let pagina = <Spinner/>;
         if(this.props.data){
@@ -164,7 +171,10 @@ class TareaView extends Component {
                         <Descripcion 
                             comunidad={this.props.comunidad}
                             estado={this.state.estado}
+                            descripcion={this.state.descripcion}
+                            setDescripcion={this.setDescripcion}
                             openModal={this.showModal}
+                            onBlur={this.onBlur}
                             />
                         <Modal input show={this.state.modal} modalClosed={this.closeModal}>
                                 <ChangeState estadoDeTarea={this.state.estado} setEstado={this.setEstado}/>
