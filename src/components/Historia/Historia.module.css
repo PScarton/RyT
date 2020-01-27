@@ -1,13 +1,7 @@
 .MainCont{
     width: 100%;
-    height: 70vh;
+    height: 75vh;
     margin-top: 55px;
     display: flex;
     flex-flow: column;
-}
-
-.ComunidadesCont{
-    width: 100%;
-    height: 90%;
-    overflow: auto;
 }

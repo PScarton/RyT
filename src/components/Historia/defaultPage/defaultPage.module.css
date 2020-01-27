@@ -1,0 +1,25 @@
+.MainCont{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.TextContent{
+    width: 60%;
+    text-align: center;
+
+}
+
+.TextContent p {
+    margin: 0;
+    padding: 0;
+    color: rgba(0, 0, 0, 0.4);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI';
+    font-style: normal;
+    font-weight: 350;
+    font-size: 14px;
+    line-height: 19px;
+}

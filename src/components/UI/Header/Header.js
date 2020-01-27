@@ -9,6 +9,7 @@ import classes from './Header.module.css';
 import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
+import Input from '../input/Input';
 
 const Header = (props) => {
 
@@ -66,6 +67,13 @@ const Header = (props) => {
                             </div>
                         </MenuItem>
                     </Menu>
+                </div>;
+    }
+    if(props.userOptions){
+        tipo =  <div className={classes.MainHeader}>
+                    <div className={classes.ItemsHistory}>
+                        <Input onChange={null} naked/>
+                    </div>
                 </div>;
     }
 
