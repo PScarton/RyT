@@ -5,12 +5,12 @@ import classes from './TareaDetails.module.css'
 import { Icon } from '@iconify/react'; 
 import bxsUser from '@iconify/icons-bx/bxs-user';
 import calendarOutline from '@iconify/icons-ion/calendar-outline';
-import Calendario from '../../UI/Calendario/Calendario';
-import Modal from '../../UI/Modal/Modal';
+import Calendario from '../../../UI/Calendario/Calendario';
+import Modal from '../../../UI/Modal/Modal';
 
 import {format, parseISO} from 'date-fns'
 import { es } from 'date-fns/locale';
-import InputBox from '../../componentesGenerales/inputBox/InputBox';
+import InputBox from '../../../componentesGenerales/inputBox/InputBox';
 
 class TareaDetails extends Component {
 

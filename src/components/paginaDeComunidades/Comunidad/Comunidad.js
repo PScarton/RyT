@@ -2,20 +2,20 @@ import React, { Component } from 'react';
 
 import classes from './Comunidad.module.css';
 
-import AppBar from '../componentesGenerales/AppBar/Appbar';
-import Header from '../UI/Header/Header';
+import AppBar from '../../componentesGenerales/AppBar/Appbar';
+import Header from '../../UI/Header/Header';
 import TareasList from './TareasList/TareasList';
-import AirButton from '../UI/AirButton/AirButton';
-import Modal from '../UI/Modal/Modal';
-import InputBox from '../componentesGenerales/inputBox/InputBox';
+import AirButton from '../../UI/AirButton/AirButton';
+import Modal from '../../UI/Modal/Modal';
+import InputBox from '../../componentesGenerales/inputBox/InputBox';
+import Spinner from '../../UI/Spinner/Spinner';
+import TareaView from '../Tarea/TareaView/TareaView';
 
 
-import instance from '../../instances/axios-comunidades';
+import instance from '../../../instances/axios-comunidades';
 
 import {withRouter , Redirect } from 'react-router-dom';
-import Spinner from '../UI/Spinner/Spinner';
 
-import TareaView from '../Tarea/TareaView/TareaView';
 
 class Comunidad extends Component {
 

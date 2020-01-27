@@ -5,7 +5,7 @@ import arrowDownAlt2 from '@iconify/icons-dashicons/arrow-down-alt2';
 import bxsBuildingHouse from '@iconify/icons-bx/bxs-building-house';
 
 import classes from './Descripcion.module.css';
-import Input from '../../UI/input/Input';
+import Input from '../../../UI/input/Input';
 
 const Descripcion = (props) => {
         let descripcion = ""

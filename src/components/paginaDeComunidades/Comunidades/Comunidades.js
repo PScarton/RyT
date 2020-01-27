@@ -2,16 +2,16 @@ import React, { Component } from 'react';
 
 import  classes from './Comunidades.module.css';
 
-import Header from '../UI/Header/Header';
-import AppBar from '../componentesGenerales/AppBar/Appbar';
-import Title from '../UI/Title/Title';
+import Header from '../../UI/Header/Header';
+import AppBar from '../../componentesGenerales/AppBar/Appbar';
+import Title from '../../UI/Title/Title';
 import ComunidadesBox from './ComunidadBox/ComunidadBox';
-import Spinner from '../UI/Spinner/Spinner';
-import AirButton from '../UI/AirButton/AirButton';
-import Modal from '../UI/Modal/Modal';
-import InputBox from '../componentesGenerales/inputBox/InputBox';
+import Spinner from '../../UI/Spinner/Spinner';
+import AirButton from '../../UI/AirButton/AirButton';
+import Modal from '../../UI/Modal/Modal';
+import InputBox from '../../componentesGenerales/inputBox/InputBox';
 
-import instance from '../../instances/axios-comunidades';
+import instance from '../../../instances/axios-comunidades';
 
 class Comunidades extends Component{
 

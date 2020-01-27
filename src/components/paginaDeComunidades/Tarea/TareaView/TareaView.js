@@ -2,14 +2,14 @@ import React, {Component} from 'react';
 
 import { withRouter } from 'react-router-dom'
 
-import Header from '../../UI/Header/Header';
+import Header from '../../../UI/Header/Header';
 import TareaDetails from '../TareaDetails/TareaDetails';
 import Descripcion from '../Descripcion/Descripcion';
-import Modal from '../../UI/Modal/Modal';
+import Modal from '../../../UI/Modal/Modal';
 import ChangeState from '../ChangeState/ChangeState';
 
-import instance from '../../../instances/axios-comunidades';
-import Spinner from '../../UI/Spinner/Spinner';
+import instance from '../../../../instances/axios-comunidades';
+import Spinner from '../../../UI/Spinner/Spinner';
 
 class TareaView extends Component {
 

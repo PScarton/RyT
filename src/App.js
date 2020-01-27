@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 
-import Comunidades from './components/Comunidades/Comunidades';
-import Comunidad from './components/Comunidad/Comunidad';
+import Comunidades from './components/paginaDeComunidades/Comunidades/Comunidades';
+import Comunidad from './components/paginaDeComunidades/Comunidad/Comunidad';
 
 import {Switch , Redirect , Route } from 'react-router-dom';
 
