@@ -1,0 +1,64 @@
+.DetailCont{
+    margin-top: 100px;
+    width: 100%;
+    height: 80px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI';
+}
+
+.Title{
+    width: 80%;
+    height: 30px;
+    margin: 0 auto;
+}
+
+.Title p {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.midCont{
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    height: 35px;
+}
+.midCont button {
+    border: 0;
+    width: 50%;
+    height: 35px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+}
+
+.SmallCont{
+    text-align: left;
+}
+
+.SmallCont p {
+    padding: 0;
+    margin: 0;
+}
+
+.Titulito{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 13px;
+
+    color: rgba(0, 0, 0, 0.6);
+}
+.Contenido{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+}

@@ -1,0 +1,14 @@
+.mainCont{
+    width: 100%;
+    height: 70vh;
+    margin-top: 80px;
+    overflow: auto;
+}
+
+.MainTabs{
+    width: 300%;
+    height: 100%;
+    overflow: auto;
+    display: flex;
+    justify-content: space-around;
+}

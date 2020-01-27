@@ -1,0 +1,63 @@
+.Descripcion{
+    width: 100%;
+    background-color: #f4f4f4;
+    height: 300px;
+    display: flex;
+    flex-flow: column;
+}
+
+.Header{
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+}
+
+.contItems{
+    display: flex;
+    align-items: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 13px;
+}
+
+.Header div {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.Header button {
+    width: 150px;
+    border: 0;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 13px;
+    opacity: 0.5;
+}
+
+.Contenido{
+    width: 90%;
+    height: 80%;
+    margin: 0 auto;
+    overflow: auto;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.Estado{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 13px;
+}

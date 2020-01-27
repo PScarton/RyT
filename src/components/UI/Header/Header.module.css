@@ -1,0 +1,88 @@
+.MainHeader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+}
+.MainHeader button {
+    height: 100%;
+    width: 15%;
+    border: 0;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.MainHeader p{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.ItemsMain{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.Items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.TareaHeader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: #33A2BB;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.TareaHeader button{
+    height: 100%;
+    width: 15%;
+    border: 0;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.TareaHeader p{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+}
+
+.optionCont{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+.optionCont p {
+    margin: 0 8px;
+    padding: 0;
+}
+
+.titulo{
+    width: auto;
+    height: 30px;
+}
