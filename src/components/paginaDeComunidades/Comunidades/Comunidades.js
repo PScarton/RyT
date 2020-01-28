@@ -39,16 +39,19 @@ class Comunidades extends Component{
 
     //Agregando comunidad a la db
     pushComunidad = (data) => {
-        const newComunidad = {
-            nombre: data
+        console.log(data)
+        if(data!==""){
+            const newComunidad = {
+                nombre: data
+            }
+            instance.post('/comunidades.json',newComunidad)
+                .then(response => { 
+                    this.actualiazarComunidades();
+                })
+                .catch(error => {
+                    console.log("No se pudo realizar la operación")
+                })
         }
-        instance.post('/comunidades.json',newComunidad)
-            .then(response => { 
-                this.actualiazarComunidades();
-            })
-            .catch(error => {
-                console.log("No se pudo realizar la operación")
-            })
     }
 
     //funciones de la nueva comunidad

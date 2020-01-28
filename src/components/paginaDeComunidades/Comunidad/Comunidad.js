@@ -78,20 +78,22 @@ class Comunidad extends Component {
     }
     setNewTask = (data) => {
         this.closeModal();
-        const newTask = {
-            titulo: data,
-            estado: "Por hacer",
-            responsable: "Por asignar...",
-            date: "Por asignar...",
-            descripcion: null
+        if(data!==""){
+            const newTask = {
+                titulo: data,
+                estado: "Por hacer",
+                responsable: "Por asignar...",
+                date: "Por asignar...",
+                descripcion: null
+            }
+            instance.post(this.props.match.url+'/Tareas/toDo.json',newTask)
+                .then(() => {
+                    this.getData();
+                })
+                .catch(error => {
+                    console.log("Error");
+                });
         }
-        instance.post(this.props.match.url+'/Tareas/toDo.json',newTask)
-            .then(() => {
-                this.getData();
-            })
-            .catch(error => {
-                console.log("Error");
-            });
     }
 
     //funciones para tarea:
@@ -109,7 +111,7 @@ class Comunidad extends Component {
         this.setState({
             tarea: tarea,
             showTarea: true
-        })
+        }) 
     }
 
     render(){
@@ -151,24 +153,26 @@ class Comunidad extends Component {
         }
         let main = <main className={classes.mainCont}>
                         <div className={classes.MainTabs}>
-                            <TareasList   
-                                data={dataTodo} title="Por hacer"
-                                noTask={noTaskToDo}
-                                type="toDo"
-                                getData={this.getDataTarea}
-                                url={this.props.match.pathname}/>
-                            <TareasList   
-                                data={dataInProgress} title="En proceso"
-                                noTask={noTaskInProgress}
-                                type="inProgress"
-                                getData={this.getDataTarea}
-                                url={this.props.match.pathname}/>
-                            <TareasList   
-                                data={dataEnded} title="Finalizadas"
-                                noTask={noTaskEnded}
-                                type="ended"
-                                getData={this.getDataTarea}
-                                url={this.props.match.pathname}/>
+                            <div className={classes.TabsCenter}>
+                                <TareasList   
+                                    data={dataTodo} title="Por hacer"
+                                    noTask={noTaskToDo}
+                                    type="toDo"
+                                    getData={this.getDataTarea}
+                                    url={this.props.match.pathname}/>
+                                <TareasList   
+                                    data={dataInProgress} title="En proceso"
+                                    noTask={noTaskInProgress}
+                                    type="inProgress"
+                                    getData={this.getDataTarea}
+                                    url={this.props.match.pathname}/>
+                                <TareasList   
+                                    data={dataEnded} title="Finalizadas"
+                                    noTask={noTaskEnded}
+                                    type="ended"
+                                    getData={this.getDataTarea}
+                                    url={this.props.match.pathname}/>
+                            </div>
                         </div>
                     </main>
             if(this.state.eliminando){

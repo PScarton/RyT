@@ -6,9 +6,16 @@
 }
 
 .MainTabs{
-    width: 300%;
+    width: 250%;
     height: 100%;
     overflow: auto;
     display: flex;
     justify-content: space-around;
+}
+
+.TabsCenter {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
 }
